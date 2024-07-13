@@ -1,0 +1,8 @@
+services:
+  teamcity-server-instance:
+    image: jetbrains/teamcity-server:latest
+    volumes:
+      - /home/yc-user/data/teamcity_server/datadir:/data/teamcity_server/datadir
+      - /home/yc-user/data/teamcity_server/logs:/opt/teamcity/logs
+    ports:
+      - 8080:8111

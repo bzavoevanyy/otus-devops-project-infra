@@ -116,3 +116,5 @@ fabric.properties
 /prod/tfplan
 /prod/.terraform.lock.hcl
 /prod/secret-files/
+/secret-files/
+/temp/

@@ -72,7 +72,7 @@ resource "helm_release" "prometheus-stack" {
   repository = "https://prometheus-community.github.io/helm-charts"
   chart = "kube-prometheus-stack"
   name  = "prometheus-stack"
-  values = [file("${path.module}/files/monitoring-prod.yaml")]
+  values = [file("${path.module}/files/monitoring-stage.yaml")]
   namespace = "monitoring"
 
   set {

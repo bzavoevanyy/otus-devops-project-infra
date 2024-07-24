@@ -49,3 +49,8 @@ prometheus:
       - secretName: domain-name-secret
         hosts:
           - prometheus.bz-otus-project.fun
+  prometheusSpec:
+    serviceMonitorSelectorNilUsesHelmValues: false
+    podMonitorSelectorNilUsesHelmValue: false
+    probeSelectorNilUsesHelmValues: false
+    ruleSelectorNilUsesHelmValues: false

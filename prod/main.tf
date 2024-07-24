@@ -11,7 +11,7 @@ module "db" {
   db_admin_pass      = var.db_admin_pass
   pg_bases           = var.pg_bases
   pg_users           = var.pg_users
-  assign_public_ip   = true
+  assign_public_ip   = false
   folder_name        = var.folder_name
 }
 
